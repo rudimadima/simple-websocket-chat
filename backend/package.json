@@ -1,0 +1,17 @@
+{
+  "name": "simple-websocket-chat",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Backend of simple chat that uses websocket protocol.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ws": "^8.3.0"
+  }
+}

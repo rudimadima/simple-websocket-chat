@@ -1,0 +1,161 @@
+body {
+  margin: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.loginFormWrapper {
+  --indentSize: 15px;
+  --blockWidth: 280px;
+  --borderSet: 1px solid #a5a5a5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.loginFormWrapper .info {
+  width: var(--blockWidth);
+  border: var(--borderSet);
+  padding: var(--indentSize);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0 0 10px 0;
+}
+
+.chatLoginForm {
+  width: var(--blockWidth);
+  border: var(--borderSet);
+  padding: var(--indentSize);
+  box-sizing: border-box;
+  background-color: #fafafa;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.chatLoginForm input {
+  border: 1px solid #a5a5a5;
+  font-size: 20px;
+  outline: none;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.chatLoginForm input:focus, .chatLoginForm input[type=text]:focus, .chatLoginForm input[type=password]:focus {
+  border: 1px solid #000000;
+  outline: none;
+}
+
+.chatLoginForm input[type=text], .chatLoginForm input[type=password] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #a5a5a5;
+  padding: 4px;
+  margin-bottom: var(--indentSize);
+}
+
+.chatLoginForm input[type=submit] {
+  padding: 5px 15px;
+}
+
+.withFastShake {
+  animation: fastShake 0.2s linear 3;
+}
+
+@keyframes fastShake {
+  0% { transform: translateX(0px); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+  100% { transform: translateX(0px); }
+}
+
+.loginFormWrapper .message {
+  font-family: sans-serif;
+  width: var(--blockWidth);
+  font-size: 20px;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.loginFormWrapper .message:empty {
+  display: none;
+}
+
+.chatBlockWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.displayNone {
+  display: none;
+}
+
+.chatContent {
+  border: 1px solid #a5a5a5;
+  width: 100%;
+  max-width: 600px;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 5px;
+  padding: 5px;
+  height: 200px;
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.chatContent .oneMessage {
+  margin-bottom: 10px;
+}
+
+.chatContent .oneMessage:last-child {
+  margin-bottom: 0px;
+}
+
+.chatContent .oneMessage .time {
+  color: #606060;
+  font-size: 0.7em;
+}
+
+.chatContent .oneMessage .name {
+  color: #f7f7f7;
+  padding: 0px 5px;
+  background-color: #404040;
+  border-radius: 4px;
+}
+
+.chatContent .oneMessage .text {
+  color: #000000;
+  overflow-wrap: break-word;
+}
+
+.chatBlockWrapper .sendMessageForm {
+  border: 0px solid black;
+  width: 100%;
+  max-width: 600px;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 10px 0px 0px 0px;
+  max-height: 200px;
+  box-sizing: border-box;
+}
+
+.chatBlockWrapper input {
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.chatBlockWrapper .inputMessage {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.chatBlockWrapper .submitButton {
+  padding: 0px 20px;
+}

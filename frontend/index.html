@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet" type="text/css">
+<title>Chat Via Websocket</title>
+
+</head>
+
+<body>
+
+<div class="loginFormWrapper">
+  <div class="info">
+    Use this test accounts: admin 123, tom 123456, bob 0000, Dima 555, Irina 777.
+  </div>
+
+  <form class="chatLoginForm">
+    <input type="text" name="login" placeholder="Username...">
+    <input type="password" name="password" placeholder="Password...">
+    <input type="submit" name="password" value="Login">
+  </form>
+  <div class="message"></div>
+</div>
+
+<div class="chatBlockWrapper displayNone">
+  <div class="chatContent">
+    <!-- <div class="oneMessage">
+      <span class="time">10:58:32</span>
+      <span class="name">White Snow</span>
+      <span class="text">Hello! This is example message.</span>
+    </div> -->
+  </div>
+  <form class="sendMessageForm">
+    <input type="text" class="inputMessage" maxlength="500"><br>
+    <input type="submit" class="submitButton" value="Send">
+  </form>
+</div>
+
+<script src="front_script.js"></script>
+
+</body>
+</html>
