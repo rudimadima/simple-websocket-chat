@@ -27,7 +27,8 @@ app.get('/', (req, res) => { res.send('Main page. This app is made for chat via 
 app.options('/chat/login', (req, res) => { res.send(''); });
 app.post('/chat/login', login);
 
-const port = 3000;
+const port = process.env.PORT || 3000;
+
 const server = http.createServer(app);
 console.log(`Starting http-server at port ${port}`);
 server.listen(port);
